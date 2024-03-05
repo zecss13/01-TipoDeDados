@@ -52,22 +52,22 @@ int main()
 
 	cout << "Entrada de Dados" << endl;
 	cout << "================" << endl;
-	string nome = "";
-	int idade = 0;
-	int dias = 0;
-	int horas = 0;
-	int minutos = 0;
+	int peso = 0;
+	int kilos = 0;
 
-	cout << "Digite seu nome: ";
-	cin >> nome;
-	cout << "Digite sua idade: ";
-	cin >> idade;
-	dias = idade * 365;
-	horas = dias * 24;
-	minutos = horas * 60;
-	cout << "Sua idade em dias e: " << dias << endl;
-	cout << "Sua idade em horas e: " << horas << endl;
-	cout << "Sua idade em minutos e: " << minutos << endl;
+
+	cout << "Digite seu peso: ";
+	cin >> peso;
+	if (peso > 100)
+	{
+		cout << "Monstro" << endl;
+	}
+	if (peso < 100)
+	{
+		cout << "frango" << endl;
+	} 
+
+
 
 	cout << "Qualquer tecla para sair...";
 	system("pause"); // somente no Windows
